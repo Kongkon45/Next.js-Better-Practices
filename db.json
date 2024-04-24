@@ -1,0 +1,41 @@
+{
+    "blogs" : [
+        {
+          "id": 1,
+          "title": "The Power of Positive Thinking",
+          "description": "Discover how positive thinking can transform your life. Embracing a positive mindset can lead to increased happiness, improved relationships, and better overall well-being.",
+          "likesCount": 13320
+        },
+        {
+          "id": 2,
+          "title": "Effective Time Management Tips",
+          "description": "Learn valuable time management strategies to boost productivity and reduce stress. Mastering the art of prioritization and organization can help you achieve your goals.",
+          "likesCount": 95
+        },
+        {
+          "id": 3,
+          "title": "Healthy Eating Habits for a Balanced Life",
+          "description": "Explore the importance of maintaining a balanced diet for optimal health. Adopting healthy eating habits can enhance your energy levels and improve your quality of life.",
+          "likesCount": 150
+        },
+        {
+          "id": 4,
+          "title": "The Art of Mindfulness Meditation",
+          "description": "Dive into the practice of mindfulness meditation and its benefits for mental and emotional well-being. Cultivating mindfulness can help reduce anxiety and increase mindfulness.",
+          "likesCount": 200
+        },
+        {
+          "id": 5,
+          "title": "Tips for Effective Communication",
+          "description": "Discover practical tips for improving your communication skills. Effective communication is essential for building strong relationships and succeeding in both personal and professional life.",
+          "likesCount": 85
+        },
+        {
+          "id": 6,
+          "title": "The Importance of Regular Exercise",
+          "description": "Learn about the numerous benefits of regular exercise for physical and mental health. Incorporating exercise into your daily routine can lead to improved fitness and overall well-being.",
+          "likesCount": 180
+        }
+      ]
+      
+}
