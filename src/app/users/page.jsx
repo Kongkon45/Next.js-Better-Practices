@@ -1,6 +1,8 @@
+"use client"
 import Link from 'next/link'
 
 import { Roboto } from 'next/font/google'
+import { useGetAllUsersQuery } from '@/redux/features/users/usersApi';
  
 const roboto = Roboto({
   weight: '400',
@@ -8,21 +10,24 @@ const roboto = Roboto({
   display: 'swap',
 })
 
-export const metadata = {
-  title: "User page",
-  description: "User page description",
-};
+// export const metadata = {
+//   title: "User page",
+//   description: "User page description",
+// };
 
 const Users = async () => {
-    const res = await fetch("https://jsonplaceholder.typicode.com/users");
-    const users = await res.json();
+    // const res = await fetch("https://jsonplaceholder.typicode.com/users");
+    // const users = await res.json();
     // console.log(users)
+
+    const {data:usersData, error, isLoading} = useGetAllUsersQuery();
+    // console.log(usersData)
     return (
         <div>
-            <h1 className="text-3xl font-bold text-center my-4">All Users : {users.length}</h1>
+            <h1 className="text-3xl font-bold text-center my-4">All usersData : {usersData.length} </h1>
             <div className={roboto.className}>
             {
-                users?.map((user)=>{
+                usersData?.map((user)=>{
                     return <div key={user.id} className="card bg-gray-100 shadow-xl w-1/2 mx-auto my-6">
                     <div className="card-body">
                       <h2 className="card-title">{user.name}</h2>
